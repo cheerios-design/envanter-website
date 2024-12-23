@@ -20,16 +20,16 @@
     </style>
 </head>
 
-<body class="antialiased bg-background">
+<body class="class= antialiased bg-background">
     <header class="lg:px-16 fixed w-full px-6 bg-p3 flex flex-wrap items-center lg:py-0 py-2">
-        <div class="flex-1 flex justify-between items-center">
+        <div class="flex-1 flex justify-between items-left">
             <a href="#">
                 <img class="p-2" src="./assets/images/envanterconsulting_logomark_colored_trans_full_color_rgb.svg"
                     width="45" alt="">
             </a>
         </div>
 
-        <label for="menu-toggle" class="pointer-cursor lg:hidden block"><svg class="fill-current text-gray-900"
+        <label for="menu-toggle" class="pointer-cursor lg:hidden block"><svg class="fill-current text-background"
                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                 <title>menu</title>
                 <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
@@ -49,12 +49,17 @@
                             href="#">Blog</a></li>
                     <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-p5 lg:mb-0 mb-2"
                             href="#">Support</a></li>
+                    <li><a href="#login"
+                            class="lg:p-3 py-3 px-0 block bg-p1 rounded-lg text-background border-transparent hover:bg-p5 ml-20 lg:mb-0 mb-2">
+                            Sign Up / Log In
+                        </a></li>
                 </ul>
+
             </nav>
-            <a href="#profile" class="lg:ml-4 flex items-center justify-start lg:mb-0 mb-4 pointer-cursor">
+            <!-- <a href="#profile" class="lg:ml-4 flex items-center justify-start lg:mb-0 mb-4 pointer-cursor">
                 <img class="rounded-full w-10 h-10 border-2 border-transparent hover:border-indigo-400"
                     src="//www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200" alt="random profile">
-            </a>
+            </a> -->
 
         </div>
 
@@ -96,12 +101,13 @@
             <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 px-5 md:px-10 items-center">
                 <!-- Images Section -->
                 <div class="flex flex-col gap-6">
-                    <img src="./assets/images/supplier.webp" alt="Suppliers Meeting" class="rounded-lg shadow-lg" />
+                    <img src="./assets/images/supplier.webp" loading="lazy" alt="Suppliers Meeting"
+                        class="rounded-lg shadow-lg" />
                 </div>
 
                 <!-- Text Content Section -->
                 <div>
-                    <p class="text-p2 font-semibold uppercase mb-4">Who We Are</p>
+                    <p class="text-p2 font-semibold uppercase mb-4">What are we?</p>
                     <h2 class="text-3xl md:text-4xl font-bold text-text mb-6">
                         High-Quality, Reliable, and Transparent Platform for Suppliers and Consumers
                     </h2>
@@ -117,14 +123,268 @@
 
                 </div>
         </section>
+        <section class="features container text-white py-16">
+            <div class="bg-p1 py-24 sm:py-32">
+                <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                    <div class="mx-auto max-w-2xl lg:text-center">
+                        <h2 class="text-base/7 font-semibold text-p3">Our Features</h2>
+                        <p
+                            class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-background sm:text-5xl lg:text-balance">
+                            Everything you need to connect suppliers and consumers
+                        </p>
+                        <p class="mt-6 text-lg/8 text-background">
+                            Envanter provides tools to manage products, contracts, and partnerships, ensuring a seamless
+                            and transparent
+                            experience for both suppliers and consumers.
+                        </p>
+                    </div>
+                    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+                        <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+                            <div class="relative pl-16">
+                                <dt class="text-base/7 font-semibold text-background">
+                                    <div
+                                        class="absolute p-2 left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-background">
+                                        <img src="./assets/icons/pro_mngmnt.svg" alt="">
+                                    </div>
+                                    Product Management
+                                </dt>
+                                <dd class="mt-2 text-base/7 text-background">
+                                    Simplify your inventory tracking and product optimization with Envanter's powerful
+                                    product management tools.
+                                </dd>
+                            </div>
+                            <div class="relative pl-16">
+                                <dt class="text-base/7 font-semibold text-background">
+                                    <div
+                                        class="absolute p-2 left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-background">
+                                        <img src="./assets/icons/contract.svg" alt="">
+                                    </div>
+                                    Contract Management
+                                </dt>
+                                <dd class="mt-2 text-base/7 text-background">
+                                    Handle contracts and agreements with ease using automated workflows and secure
+                                    document storage.
+                                </dd>
+                            </div>
+                            <div class="relative pl-16">
+                                <dt class="text-base/7 font-semibold text-background">
+                                    <div
+                                        class="absolute p-2 left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-background">
+                                        <img src="./assets/icons/profile.svg" alt="">
+                                    </div>
+                                    Supplier Profiles
+                                </dt>
+                                <dd class="mt-2 text-base/7 text-background">
+                                    Access detailed supplier profiles to find the best partnerships for your business
+                                    needs.
+                                </dd>
+                            </div>
+                            <div class="relative pl-16">
+                                <dt class="text-base/7 font-semibold text-background">
+                                    <div
+                                        class="absolute p-2 left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-background">
+                                        <img src="./assets/icons/analytics.svg" alt="">
+                                    </div>
+                                    Analytics & Insights
+                                </dt>
+                                <dd class="mt-2 text-base/7 text-background">
+                                    Make data-driven decisions with real-time analytics and detailed insights into your
+                                    business performance.
+                                </dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="bg-s4 text-white py-16">
+            <!-- Container -->
+            <div class="mx-auto max-w-7xl px-5 py-16 md:px-10 md:py-20">
+                <!-- Heading Container -->
+                <div class="mx-auto mb-8 max-w-3xl text-center md:mb-12 lg:mb-16">
+                    <!-- Heading -->
+                    <h2 class="text-3xl text-text font-bold md:text-5xl"> Transparent & Affordable Pricing </h2>
+                    <!-- Subheading -->
+                    <p class="mt-4 text-sm text-gray-800 sm:text-base"> Clear pricing plans for all businesses, with no
+                        hidden fees </p>
+                </div>
+                <!-- Price Container -->
+                <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 md:gap-4">
+                    <!-- Price -->
+                    <div
+                        class="mx-auto flex w-full max-w-md flex-col items-start rounded-md border border-gray-700 p-8">
+                        <div class="mb-4 rounded-md bg-p3 px-4 py-1.5">
+                            <p class="text-sm font-bold text-text sm:text-sm">BASIC</p>
+                        </div>
+                        <p class="mb-6 text-base font-semibold text-text -300 md:mb-10 lg:mb-12">
+                            Designed for small businesses to start managing their inventory with ease.
+                        </p>
+                        <h2 class="mb-5 text-3xl text-text font-bold md:text-5xl lg:mb-8"> $49<span
+                                class="text-sm font-light sm:text-sm">/month</span>
+                        </h2>
+                        <a href="#"
+                            class="mb-5 w-full rounded-md bg-text px-6 py-3 text-center font-semibold hover:bg-p3 hover:text-text">
+                            Get
+                            Started </a>
+                        <div class="mt-2 flex items-center">
+                            <img src="./assets/icons/check.svg" alt="Check Mark" class="mr-2 inline-block w-4" />
+                            <p class="font-semibold text-text">Inventory Management</p>
+                        </div>
+                        <div class="mt-2 flex items-center">
+                            <img src="./assets/icons/check.svg" alt="Check Mark" class="mr-2 inline-block w-4" />
+                            <p class="font-semibold text-text">Supplier Access</p>
+                        </div>
+                        <div class="mt-2 flex items-center">
+                            <img src="./assets/icons/check.svg" alt="Check Mark" class="mr-2 inline-block w-4" />
+                            <p class="font-semibold text-text">Basic Analytics</p>
+                        </div>
+                    </div>
+                    <!-- Price -->
+                    <div
+                        class="mx-auto flex w-full max-w-md flex-col items-start rounded-md border border-gray-700 bg-gray-800 p-8">
+                        <div class="mb-4 rounded-md bg-p3 px-4 py-1.5">
+                            <p class="text-sm font-bold text-text sm:text-sm">GROWTH</p>
+                        </div>
+                        <p class="mb-6 text-base font-semibold text-gray-300 md:mb-10 lg:mb-12">
+                            Perfect for growing businesses with advanced tools for supplier and consumer management.
+                        </p>
+                        <h2 class="mb-5 text-3xl font-bold md:text-5xl lg:mb-8"> $99<span
+                                class="text-sm font-light sm:text-sm">/month</span>
+                        </h2>
+                        <a href="#"
+                            class="mb-5 w-full rounded-md bg-background text-text px-6 py-3 text-center font-semibold hover:bg-text hover:text-p3">
+                            Get
+                            Started </a>
+                        <div class="mt-2 flex items-center">
+                            <img src="./assets/icons/check-white.svg" alt="Check Mark" class="mr-2 inline-block w-4 " />
+                            <p class="font-semibold">Advanced Inventory Tools</p>
+                        </div>
+                        <div class="mt-2 flex items-center">
+                            <img src="./assets/icons/check-white.svg" alt="Check Mark" class="mr-2 inline-block w-4 " />
+                            <p class="font-semibold">Contract Management</p>
+                        </div>
+                        <div class="mt-2 flex items-center">
+                            <img src="./assets/icons/check-white.svg" alt="Check Mark" class="mr-2 inline-block w-4 " />
+                            <p class="font-semibold">Priority Support</p>
+                        </div>
+                    </div>
+                    <!-- Price -->
+                    <div
+                        class="mx-auto flex w-full max-w-md flex-col items-start rounded-md border border-gray-700 p-8">
+                        <div class="mb-4 rounded-md bg-p3 px-4 py-1.5">
+                            <p class="text-sm font-bold text-text sm:text-sm">PREMIUM</p>
+                        </div>
+                        <p class="mb-6 text-base font-semibold text-text md:mb-10 lg:mb-12">
+                            Tailored for large enterprises needing full control and advanced features.
+                        </p>
+                        <h2 class="mb-5 text-3xl text-text font-bold md:text-5xl lg:mb-8"> $199<span
+                                class="text-sm font-light sm:text-sm">/month</span>
+                        </h2>
+                        <a href="#"
+                            class="mb-5 w-full rounded-md bg-text px-6 py-3 text-center font-semibold hover:bg-p3 hover:text-text">
+                            Get
+                            Started </a>
+                        <div class="mt-2 flex items-center">
+                            <img src="./assets/icons/check.svg" alt="Check Mark" class="mr-2 inline-block w-4" />
+                            <p class="font-semibold text-text">Full Analytics Suite</p>
+                        </div>
+                        <div class="mt-2 flex items-center">
+                            <img src="./assets/icons/check.svg" alt="Check Mark" class="mr-2 inline-block w-4" />
+                            <p class="font-semibold text-text">Dedicated Account Manager</p>
+                        </div>
+                        <div class="mt-2 flex items-center">
+                            <img src="./assets/icons/check.svg" alt="Check Mark" class="mr-2 inline-block w-4" />
+                            <p class="font-semibold text-text">Enterprise API Access</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-p1">
+            <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-background">Contact Us</h2>
+                <p class="mb-8 lg:mb-16 font-semibold text-center text-background sm:text-xl">
+                    Have questions about our platform? Facing technical issues or need assistance? We’re here to help.
+                </p>
+                <form action="#" class="space-y-8">
+                    <div>
+                        <label for="email" class="block mb-2 text-sm font-medium text-background">Your Email</label>
+                        <input type="email" id="email"
+                            class="shadow-sm bg-white border border-p3 text-text text-sm rounded-lg focus:ring-p3 focus:border-p3 block w-full p-2.5"
+                            placeholder="name@envanter.com" required />
+                    </div>
+                    <div>
+                        <label for="subject" class="block mb-2 text-sm font-medium text-background">Subject</label>
+                        <input type="text" id="subject"
+                            class="block p-3 w-full text-sm text-text bg-white rounded-lg border border-p3 shadow-sm focus:ring-p3 focus:border-p3"
+                            placeholder="Let us know how we can assist you" required />
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="message" class="block mb-2 text-sm font-medium text-background">Your Message</label>
+                        <textarea id="message" rows="6"
+                            class="block p-2.5 w-full text-sm text-text bg-white rounded-lg shadow-sm border border-p3 focus:ring-p3 focus:border-p3"
+                            placeholder="Write your message here..."></textarea>
+                    </div>
+                    <button type="submit"
+                        class="py-3 px-5 text-sm font-medium text-center text-p1 rounded-lg bg-background sm:w-fit hover:bg-p3 hover:text-text focus:ring-4 focus:outline-none focus:ring-p3">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+
+
+
+
 
 
 
 
     </main>
-    <footer class="bg-p3 text-center text-s3 py-8">
-        <p>&copy; 2023 Envanter. All rights reserved.</p>
+
+    <footer class="block bg-p3 text-text">
+        <!-- Container -->
+        <div class="py-16 md:py-20 mx-auto w-full max-w-7xl px-5 md:px-10">
+            <!-- Component -->
+            <div class="sm:flex-row flex justify-between flex-col">
+                <h2 class="font-bold text-3xl md:text-5xl w-full max-w-xl text-p1"> Empowering Connections, Building
+                    Trust </h2>
+                <div class="mt-8 md:mt-0">
+                    <div class="mb-4 flex max-w-72 items-center justify-center">
+                        <img src="./assets/icons/location.svg" alt="Location" class="w-10" />
+                        <p class="text-text text-sm sm:text-base "> 1234 Supplier Lane, Istanbul, Turkey </p>
+                    </div>
+                    <div class="mb-4 flex max-w-72 items-start justify-start">
+                        <img src="./assets/icons/email.svg" alt="Email" class="w-10" />
+                        <p class="text-text text-sm sm:text-base "> support@en-vanter.com </p>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-14 w-full border-b border-gray-700 mt-16"></div>
+            <div class="md:flex-row flex justify-between sm:items-center sm:flex-col items-start flex-col-reverse">
+                <div class="font-semibold mb-4 sm:mb-0 py-1 text-center sm:text-center">
+                    <a href="#"
+                        class="inline-block font-normal text-text transition hover:text-p1 sm:pr-6 lg:pr-12 py-1.5 sm:py-2 pr-6">
+                        About Us </a>
+                    <a href="#"
+                        class="inline-block font-normal text-text transition hover:text-p1 sm:pr-6 lg:pr-12 py-1.5 sm:py-2 pr-6">
+                        Features </a>
+                    <a href="#"
+                        class="inline-block font-normal text-text transition hover:text-p1 sm:pr-6 lg:pr-12 py-1.5 sm:py-2 pr-6">
+                        Services </a>
+                    <a href="#"
+                        class="inline-block font-normal text-text transition hover:text-p1 sm:pr-6 lg:pr-12 py-1.5 sm:py-2 pr-6">
+                        Contact Us </a>
+                    <a href="#"
+                        class="inline-block font-normal text-text transition hover:text-p1 sm:pr-6 lg:pr-12 py-1.5 sm:py-2 pr-6">
+                        FAQs </a>
+                </div>
+                <p class="text-text text-sm sm:text-base"> © Copyright 2024. All rights reserved. Envanter. </p>
+            </div>
+        </div>
     </footer>
+
     <script src="./scripts/main.js"></script>
     <script src="./scripts/formValidation.js"></script>
 </body>
