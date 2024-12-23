@@ -13,8 +13,8 @@ module.exports = {
         text: "#333333", // Neutral Grayish Black - Body text
       },
       fontFamily: {
-        sans: ["Inter", "Arial", "sans-serif"],
-        serif: ["Roboto Slab", "Georgia", "serif"],
+        sans: ["Inter", "sans-serif"],
+        serif: ["Roboto Slab", "serif"],
       },
     },
   },
