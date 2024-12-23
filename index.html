@@ -13,13 +13,165 @@
 
     <title>Envanter</title>
     <link rel="stylesheet" href="./styles/output.css">
+    <style>
+        #menu-toggle:checked+#menu {
+            display: block;
+        }
+    </style>
 </head>
 
-<body>
-    <header>
+<body class="antialiased bg-background">
+    <header class="lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2">
+        <div class="flex-1 flex justify-between items-center">
+            <a href="#">
+                <img class="p-2" src="./assets/images/envanterconsulting_logomark_black_trans_full_color_rgb.svg"
+                    width="45" alt="">
+            </a>
+        </div>
+
+        <label for="menu-toggle" class="pointer-cursor lg:hidden block"><svg class="fill-current text-gray-900"
+                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                <title>menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg></label>
+        <input class="hidden" type="checkbox" id="menu-toggle" />
+
+        <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+            <nav>
+                <ul class="lg:flex items-center justify-between text-base text-p1 pt-4 lg:pt-0">
+                    <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-p5" href="#">About
+                            Us</a></li>
+                    <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-p5"
+                            href="#">Features</a></li>
+                    <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-p5"
+                            href="#">Pricing</a></li>
+                    <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-p5"
+                            href="#">Blog</a></li>
+                    <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-p5 lg:mb-0 mb-2"
+                            href="#">Support</a></li>
+                </ul>
+            </nav>
+            <a href="#profile" class="lg:ml-4 flex items-center justify-start lg:mb-0 mb-4 pointer-cursor">
+                <img class="rounded-full w-10 h-10 border-2 border-transparent hover:border-indigo-400"
+                    src="//www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200" alt="random profile">
+            </a>
+
+        </div>
 
     </header>
     <main>
+        <section class="hero container">
+            <!-- Container -->
+            <div class="px-5 py-16 md:px-10 md:py-20">
+                <div class="mx-auto w-full bg-cover  bg-center bg-no-repeat px-4 py-32 text-background text-center"
+                    style="background-image: url('./assets/images/hero-bg.svg');">
+                    <!-- Title -->
+                    <h2
+                        class="mx-auto mb-6 max-w-3xl flex-col text-3xl font-bold text-background md:mb-10 md:text-5xl lg:mb-12 uppercase">
+                        Seamless Connections Between Suppliers and Consumers
+                    </h2>
+                    <ul
+                        class="mx-auto mb-8 flex flex-col items-center justify-center gap-5 sm:flex-row sm:gap-8 md:gap-10 lg:mb-12">
+                        <li class="flex items-center">
+                            <img src="./assets/icons/plus-svgrepo-com.svg" alt="plus icon" class="mr-2 h-8 w-8" />
+                            <p class="text-sm sm:text-base">Fast</p>
+                        </li>
+                        <li class="flex items-center">
+                            <img src="./assets/icons/plus-svgrepo-com.svg" alt="plus icon" class="mr-2 h-8 w-8" />
+                            <p class="text-sm sm:text-base">Reliable</p>
+                        </li>
+                        <li class="flex items-center">
+                            <img src="./assets/icons/plus-svgrepo-com.svg" alt="plus icon" class="mr-2 h-8 w-8" />
+                            <p class="text-sm sm:text-base">Transparent</p>
+                        </li>
+                    </ul>
+                    <a href="#features"
+                        class="mb-4 inline-block items-center rounded-md bg-p2 px-6 py-3 text-center font-semibold hover:bg-p4 text-white">
+                        Learn More >
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-us bg-s4 py-16 md:py-20">
+            <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 px-5 md:px-10 items-center">
+                <!-- Images Section -->
+                <div class="flex flex-col gap-6">
+                    <img src="./assets/images/supplier.webp" alt="Suppliers Meeting" class="rounded-lg shadow-lg" />
+                </div>
+
+                <!-- Text Content Section -->
+                <div>
+                    <p class="text-p4 font-semibold uppercase mb-4">Who We Are</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-p2 mb-6">
+                        High-Quality, Reliable, and Transparent Platform for Suppliers and Consumers
+                    </h2>
+                    <p class="text-base text-s3 mb-8">
+                        Envanter bridges the gap between suppliers and consumers by offering a reliable, efficient, and
+                        transparent platform. With tools to manage products, contracts, and partnerships, we empower
+                        businesses to succeed in the ever-evolving e-commerce landscape.
+                    </p>
+
+                    <!-- Mission and Vision -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                        <!-- Mission -->
+                        <div class="text-center">
+                            <div class="flex items-center justify-center w-16 h-16 mx-auto bg-p3 rounded-full">
+                                <img src="./assets/icons/mission.svg" alt="Mission Icon" class="w-8 h-8" />
+                            </div>
+                            <h3 class="text-lg font-bold text-p2 mt-4">Our Mission</h3>
+                            <p class="text-sm text-s3 mt-2">
+                                To connect suppliers and consumers through innovative tools, delivering high-quality
+                                products, speed, and trust while fostering growth in the e-commerce ecosystem.
+                            </p>
+                        </div>
+
+                        <!-- Vision -->
+                        <div class="text-center">
+                            <div class="flex items-center justify-center w-16 h-16 mx-auto bg-p3 rounded-full">
+                                <img src="./assets/icons/vision.svg" alt="Vision Icon" class="w-8 h-8" />
+                            </div>
+                            <h3 class="text-lg font-bold text-p2 mt-4">Our Vision</h3>
+                            <p class="text-sm text-s3 mt-2">
+                                To set a new standard in the marketplace by building trust, offering transparent
+                                pricing, and empowering businesses with cutting-edge tools for e-commerce success.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Values -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12">
+                        <!-- Value 1 -->
+                        <div class="text-center">
+                            <div class="flex items-center justify-center w-16 h-16 mx-auto bg-p3 rounded-full">
+                                <img src="./assets/icons/quality.svg" alt="Quality Icon" class="w-8 h-8" />
+                            </div>
+                            <h3 class="text-lg font-bold text-p2 mt-4">Quality</h3>
+                            <p class="text-sm text-s3 mt-2">
+                                We ensure that all products and services offered through our platform meet the highest
+                                standards of quality.
+                            </p>
+                        </div>
+
+                        <!-- Value 2 -->
+                        <div class="text-center">
+                            <div class="flex items-center justify-center w-16 h-16 mx-auto bg-p3 rounded-full">
+                                <img src="./assets/icons/innovation.svg" alt="Innovation Icon" class="w-8 h-8" />
+                            </div>
+                            <h3 class="text-lg font-bold text-p2 mt-4">Innovation</h3>
+                            <p class="text-sm text-s3 mt-2">
+                                By integrating technology and data-driven tools, we ensure that businesses stay ahead in
+                                the dynamic e-commerce space.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
 
     </main>
     <footer>
