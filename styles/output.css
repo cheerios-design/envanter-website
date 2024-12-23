@@ -726,6 +726,14 @@ video {
   max-width: 80rem;
 }
 
+.max-w-5xl {
+  max-width: 64rem;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -853,6 +861,21 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
 
+.bg-p1 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 41 107 / var(--tw-bg-opacity, 1));
+}
+
+.bg-p5 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 168 150 / var(--tw-bg-opacity, 1));
+}
+
+.bg-p4 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 211 94 / var(--tw-bg-opacity, 1));
+}
+
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
@@ -899,6 +922,10 @@ video {
   padding: 2rem;
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -939,6 +966,11 @@ video {
   padding-bottom: 8rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
 }
@@ -969,6 +1001,31 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-bold {
@@ -1018,9 +1075,18 @@ video {
   color: rgb(245 245 245 / var(--tw-text-opacity, 1));
 }
 
+.text-text {
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity, 1));
+}
+
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.opacity-55 {
+  opacity: 0.55;
 }
 
 .shadow-lg {
@@ -1042,6 +1108,11 @@ video {
 .hover\:bg-p4:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(244 211 94 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-p5:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 168 150 / var(--tw-bg-opacity, 1));
 }
 
 @media (min-width: 640px) {
@@ -1068,6 +1139,10 @@ video {
     margin-bottom: 2.5rem;
   }
 
+  .md\:mb-7 {
+    margin-bottom: 1.75rem;
+  }
+
   .md\:gap-10 {
     gap: 2.5rem;
   }
@@ -1089,6 +1164,11 @@ video {
 
   .md\:text-5xl {
     font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-7xl {
+    font-size: 4.5rem;
     line-height: 1;
   }
 }
